@@ -47,7 +47,7 @@ The log metrics default input file is `/var/log/nginx/access.log`.
 If you want to view the requests being formatted and written, mount the volume
 in an ubuntu or debian container and tail the log:
 
-`docker run -i -t --volumes-from logmetrics ubuntu /bin/bash`
+`docker run -i -t --volumes-from logmetrics ubuntu /bin/bash`  
 `tail -f /var/log/stats.log`
 
 Now on your Docker host, you can hit the nginx container via your browser or cli
